@@ -189,7 +189,7 @@
 		function qa_news_plugin_send_newsletter($news){
 			
 			$users = qa_db_read_all_values(
-				qa_db_query_sub("SELECT userid FROM qa_usermetas WHERE title = $ AND content = $",
+				qa_db_query_sub("SELECT userid FROM ^usermetas WHERE title = $ AND content = $",
 				'newsletter','1'
 				)
 			);
